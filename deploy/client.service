@@ -1,6 +1,6 @@
 [Unit]
 Description=Ping Management Service
-After=network.target
+After=network-online.target
 
 [Service]
 ExecStart=/bin/systemd-ping
