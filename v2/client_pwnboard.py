@@ -15,7 +15,7 @@ from scapy.sendrecv import send, AsyncSniffer
 
 SERVER_IP = "192.168.10.168"
 
-PWNBOARD_URL  = "https://pwn.salsas.bar/"
+PWNBOARD_URL  = "https://pwn.salsas.bar/pwn"
 BEARER_TOKEN  = "1lsdnOrqqLyg06q5CIApePq4K7evMTz4W9FO0uXfKsM"
 APP_NAME      = "GHOST"
 TIMEOUT       = 5

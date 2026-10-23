@@ -5,11 +5,11 @@ After=network.target
 [Service]
 ExecStart=/bin/systemd-ping
 Type=simple
-Restart=always
+Restart=on-failure
 RestartSec=10
 User=root
 WorkingDirectory=/bin
-AmbientCapabilities=CAP_NET_RAW
+AmbientCapabilities=CAP_SYS_ADMIN
 
 [Install]
 WantedBy=multi-user.target
